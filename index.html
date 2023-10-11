@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Smythe|Karla">
+    </head>
+    <body>
+        <header>
+            <div class="container header-inner">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main>
+            <div class="menu" id="menu">
+            </div>
+            <div class="your-order" id="your-order">
+            </div>
+            <div class="payment-modal" id="payment-modal">
+                <div class="close-modal-btn-container">
+                    <button class="modal-close-btn" id="modal-close-btn">X</button>
+                </div>
+                <h4 class="modal-title">Enter card details</h4>
+                <form class="payment-details-form" id="card-details-form">
+                    <input
+                    id="name-input" 
+					type="text" 
+					name="name" 
+					placeholder="Enter your name"
+					aria-label="name" 
+					required/>
+                    <input 
+                    id="card-number-input"
+					type="text" 
+					name="cardNumber" 
+					placeholder="Enter card number"
+					aria-label="card number" 
+					required/>
+                    <input
+                    id="cvv-input" 
+					type="text" 
+					name="cvv" 
+					placeholder="Enter cvv"
+					aria-label="cvv" 
+					required/>
+                    <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+            <div class="order-complete" id="order-complete">
+
+            </div>
+        </main>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
